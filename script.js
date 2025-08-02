@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     const addButton = document.getElementById('add-task-btn');
     const taskInput = document.getElementById('task-input');
+
     const taskList = document.getElementById('task-list');
 
     function addTask() {
         // get and trim input text
-        const taskText = document.getElementById('task-input').value.trim();
+        const taskText = taskInput.value.trim();
         if (!taskText) {
             alert('Please, enter a task');
             return;
@@ -38,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     document.addEventListener('DOMContentLoaded', addTask);
-
-})
+});
 
 
 
